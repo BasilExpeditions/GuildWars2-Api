@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import ContactUs from './Components/Contactus';
 import AboutUs from './Components/Aboutus';
 import BaseComponent from './Components/BaseComponent'
+import DatePickerComponent from './Components/DatePickerComponent';
+import 'antd/dist/antd.css';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      <div>
+        <DatePickerComponent />
+      </div>
     </div>
   );
 }
